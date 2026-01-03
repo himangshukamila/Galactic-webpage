@@ -49,13 +49,13 @@ const Contact = () => {
     {
       icon: "📧",
       title: "Email",
-      value: "explore@galactic.space",
+      value: "dontcontact@usgmail",
       color: "from-purple-600 to-indigo-600",
     },
     {
       icon: "🌐",
       title: "Website",
-      value: "www.galacticexplorer.space",
+      value: "https://unknowngalaxy.onrender.com",
       color: "from-blue-600 to-cyan-600",
     },
     {
