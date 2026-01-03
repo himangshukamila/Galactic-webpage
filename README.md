@@ -16,7 +16,7 @@ Built for performance, precision, and cosmic immersion.
 
 <br/>
 
-🚀 <b><a href="#">Explore Demo</a></b> • 🐛 <b><a href="#">Report Bug</a></b> • 💡 <b><a href="#">Request Feature</a></b>
+
 
 </div>
 
@@ -43,19 +43,7 @@ Built for performance, precision, and cosmic immersion.
 
 It is designed with **modern UI principles**, fluid motion, and a responsive cosmic interface that adapts seamlessly across all devices.
 
----
-
-## 🖼️ GIF Preview
-
-> 🎥 Showcase of the interactive orbit engine and UI motion
-
-<p align="center">
-  <img src="https://your-gif-url-here.gif" width="800" alt="Galactic Explorer Preview GIF"/>
-</p>
-
-> If you want, share your screen-recording and I can generate a clean GIF for you.
-
----
+--
 
 ## 🛠️ Tech Stack & Tools
 
