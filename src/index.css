@@ -1,0 +1,136 @@
+@import "tailwindcss";
+
+@theme {
+  /* Define custom colors with the --color- prefix so Tailwind generates bg- and text- classes */
+  --color-cosmic-dark: #0a0a0f;
+  --color-cosmic-navy: #1a1a2e;
+  --color-cosmic-purple: #2d1b4e;
+  
+  /* Cosmic color palette */
+  --color-purple-cosmic: #8b5cf6;
+  --color-purple-cosmic-light: #a78bfa;
+  --color-blue-cosmic: #3b82f6;
+
+  /* Typography */
+  --font-inter: "Inter", sans-serif;
+  --font-orbitron: "Orbitron", sans-serif;
+  --font-space: "Orbitron", sans-serif;
+
+  /* Re-defining your specific shadow for v4 */
+  --shadow-cosmic: 0 0 20px rgba(139, 92, 246, 0.3);
+  --shadow-cosmic-lg: 0 0 60px rgba(139, 92, 246, 0.4);
+
+  /* Animations */
+  --animate-twinkle: twinkle 5s ease-in-out infinite;
+  --animate-spin-slow: spin 20s linear infinite;
+  --animate-float: float 6s ease-in-out infinite;
+
+  @keyframes twinkle {
+    0%, 100% { opacity: 0.5; }
+    50% { opacity: 0.8; }
+  }
+  @keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-20px); }
+  }
+}
+
+/* Base Styles */
+@layer base {
+  * {
+    @apply m-0 p-0 box-border;
+  }
+
+  body {
+    background-color: var(--color-cosmic-dark);
+    color: #e0e0e0;
+    font-family: var(--font-inter);
+    @apply overflow-x-hidden antialiased;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-orbitron);
+  }
+
+  /* Custom Scrollbar */
+  ::-webkit-scrollbar {
+    @apply w-2.5;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: var(--color-cosmic-dark);
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: var(--color-purple-cosmic);
+    @apply rounded-[5px];
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--color-purple-cosmic-light);
+  }
+}
+
+/* Component Styles - Preserving your specific class effects */
+@layer components {
+  .cosmic-glow {
+    @apply relative;
+  }
+
+  .cosmic-glow::before {
+    content: '';
+    @apply absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[150%] h-[150%] -z-10 pointer-events-none;
+    background: radial-gradient(circle, rgba(139, 92, 246, 0.2) 0%, transparent 70%);
+  }
+
+  .stars-bg {
+    background-image: 
+      radial-gradient(2px 2px at 20px 30px, white, transparent),
+      radial-gradient(2px 2px at 60px 70px, white, transparent),
+      radial-gradient(1px 1px at 50px 50px, white, transparent),
+      radial-gradient(1px 1px at 130px 80px, white, transparent),
+      radial-gradient(2px 2px at 90px 10px, white, transparent);
+    background-size: 200px 200px;
+    @apply bg-repeat opacity-50 animate-twinkle;
+  }
+
+  .btn-cosmic {
+    @apply relative  overflow-hidden transition-all  duration-300;
+  }
+
+  .btn-cosmic::before {
+    content: '';
+    @apply absolute -top-10 left-1/2 w-0 h-0 rounded-full -translate-x-1/2 -translate-y-1/2 transition-all duration-600;
+    background: rgba(139, 92, 246, 0.3);
+  }
+
+  .btn-cosmic:hover::before {
+    @apply w-75 h-75;
+  }
+
+  .loading-orbit {
+  @apply w-10 h-10 rounded-full border-[3px] animate-spin;
+  border-color: rgba(139, 92, 246, 0.3);
+  border-top-color: var(--color-purple-cosmic);
+}
+
+
+  .card-3d {
+    @apply transition-all duration-300;
+  }
+
+  .card-3d:hover {
+    @apply -translate-y-2.5 scale-[1.02] shadow-cosmic-lg;
+  }
+
+  .text-gradient {
+    background: linear-gradient(135deg, #8b5cf6 0%, #3b82f6 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .float-animation {
+    @apply animate-float;
+  }
+}
