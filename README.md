@@ -1,95 +1,77 @@
-🚀 Galactic Explorer
-A high-performance, interactive 3D-feeling space exploration dashboard. Galactic Explorer leverages the latest web technologies to bring the wonders of the universe to your browser using real-time data from NASA and high-fidelity planetary textures.
+🪐 Galactic Explorer
+<div align="center">
 
-✨ Features
-🪐 Interactive Solar System: A dynamic orbit view where planets glide around a glowing Sun with realistic CSS-based orbital paths.
+A high-fidelity, interactive celestial dashboard designed for the 2026 web.
 
-📸 NASA Media Integration: Real-time fetching of "Astronomy Picture of the Day" (APOD) and Mars Rover imagery via NASA APIs.
+Explore the Demo • Report Bug • Request Feature
 
-🌌 Deep Space Gallery: High-resolution galleries of nebulae, stars, and galaxies using object-contain for full-fidelity visibility.
+</div>
 
-📡 Mission Tracking: Detailed information on humanity’s greatest missions like James Webb (JWST) and Artemis.
+🌌 Overview
+Galactic Explorer is an immersive space exploration platform built with a cutting-edge tech stack. Unlike traditional space apps, this project features a dynamic orbital engine and high-fidelity planetary rendering using real-world physics data and transparent textures.
 
-🧬 Responsive 3D UI: Powered by Framer Motion for smooth transitions and Tailwind v4 for modern, high-performance styling.
+🛠 Tech Stack & Tools
+Core Engine: React 19 ⚛️ — Utilizing the latest concurrent rendering features for zero-lag UI transitions.
 
-🛠️ Tech Stack
-Core: React 19 (The latest React engine)
+Styling: Tailwind CSS v4 🎨 — Leveraging the new @theme engine, bg-linear gradients, and CSS-variable-first architecture.
 
-Bundler: Vite 6
+Animation: Framer Motion 🎬 — Powering the complex orbital paths, 3D hover states, and smooth entrance sequences.
 
-Styling: Tailwind CSS v4 (Using the new @theme engine and bg-linear syntax)
+Performance: Vite 6 ⚡ — Ensuring lightning-fast Hot Module Replacement (HMR) and optimized build chunks.
 
-Animations: Framer Motion 12
+Data: Axios 🛰️ — Fetching real-time planetary metrics and NASA's daily celestial captures.
 
-API: Axios for NASA Open API & Le Système Solaire API
+🚀 Key Features
+🛰️ Interactive Solar System: A custom-built orbit view where planets respond to hover and click events with 3D transformations.
 
-🚀 Getting Started
-Prerequisites
-Node.js (v18.0 or higher)
+🪐 High-Fidelity Textures: Support for transparent PNGs with custom drop-shadow filters to simulate planetary atmospheres.
 
-npm or yarn
+📱 Responsive Nebula UI: A glassmorphic interface that adapts perfectly from ultra-wide monitors to mobile devices.
 
-Installation
-Clone the repository:
+📊 Live Planetary Data: Real-time information on gravity, density, and temperature for every major celestial body.
+
+✨ Particle Stars Background: A lightweight, CSS-animated starfield that creates a sense of depth and movement.
+
+📂 Project Roadmap
+[x] Initial Orbit Engine Setup
+
+[x] Integration of React 19 & Tailwind v4
+
+[x] High-res Transparent Planet Models
+
+[ ] 3D Planet Details Modal
+
+[ ] Real-time NASA Mars Rover Gallery
+
+[ ] Astronomical Event Calendar
+
+⚙️ Installation & Development
+Clone the Galaxy
 
 Bash
 
 git clone https://github.com/your-username/galactic-explorer.git
-cd galactic-explorer
-Install dependencies:
+Install Fuel
 
 Bash
 
 npm install
-Run Development Server:
+Ignite the Engine
 
 Bash
 
 npm run dev
-Open the app: Navigate to http://localhost:5173 in your browser.
+🎨 Design Philosophy
+The project uses a Space-Tech design system:
 
-📁 Project Structure
-Plaintext
+Primary Font: Orbitron (for a futuristic, digital readout look).
 
-├── public/              # High-res local planet PNGs
-├── src/
-│   ├── components/      # UI Components (SectionHeader, Modal, etc.)
-│   ├── services/        # API fetching logic (NASA, Solar System)
-│   ├── utils/           # Animation variants (effects.js)
-│   ├── pages/           # Main views (Planets, Missions, Gallery)
-│   ├── App.jsx          # Route configuration
-│   └── index.css        # Tailwind v4 Unified Styles
-└── vite.config.js       # Tailwind v4 Vite Plugin configuration
-🛰️ Data Sources
-This project stands on the shoulders of giants. Data is sourced from:
+Secondary Font: Inter (for high readability).
 
-NASA Open APIs: For APOD and Mars Rover photos.
+Palette: Deep Space Navy (#0a0a0f), Cosmic Purple (#8b5cf6), and Nebula Blue (#3b82f6).
 
-The Solar System OpenData: For accurate planetary gravity, density, and temperatures.
+<div align="center">
 
-Wikimedia Commons: For high-fidelity, transparent planetary textures.
+Give this project a ⭐ if you think it's out of this world!
 
-🛡️ License
-Distributed under the MIT License. See LICENSE for more information.
-
-🤝 Contributing
-Contributions are what make the open-source community such an amazing place to learn, inspire, and create.
-
-Fork the Project
-
-Create your Feature Branch (git checkout -b feature/AmazingFeature)
-
-Commit your Changes (git commit -m 'Add some AmazingFeature')
-
-Push to the Branch (git push origin feature/AmazingFeature)
-
-Open a Pull Request
-
-👨‍🚀 Author
-Your Name
-
-GitHub: @your-username
-
-LinkedIn: Your Name
-
-"The cosmos is within us. We are made of star-stuff." — Carl Sagan
+</div>
