@@ -1,0 +1,32 @@
+<svg width="256" height="256" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <defs>
+    <radialGradient id="galaxy-bg" cx="50%" cy="50%" r="80%">
+      <stop offset="0%" stop-color="#0a0a1a"/>
+      <stop offset="60%" stop-color="#1a1a3d"/>
+      <stop offset="100%" stop-color="#080824"/>
+    </radialGradient>
+
+    <!-- Glowing Star -->
+    <radialGradient id="star-glow" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#fffcad" stop-opacity="1"/>
+      <stop offset="40%" stop-color="#ff9eff" stop-opacity="0.7"/>
+      <stop offset="100%" stop-color="#6b3aff" stop-opacity="0.2"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Background Circle -->
+  <rect width="256" height="256" rx="32" ry="32" fill="url(#galaxy-bg)" />
+
+  <!-- Central Cosmic Element (Planet with Glow) -->
+  <circle cx="128" cy="128" r="48" fill="url(#star-glow)" />
+
+  <!-- Planet Core -->
+  <circle cx="128" cy="128" r="32" fill="#3a2b72" />
+
+  <!-- Subtle Star Sparkles -->
+  <circle cx="40" cy="60" r="3" fill="#ffffff" opacity="0.8"/>
+  <circle cx="200" cy="40" r="2" fill="#ffffff" opacity="0.7"/>
+  <circle cx="220" cy="190" r="2.5" fill="#ffffff" opacity="0.75"/>
+  <circle cx="60" cy="180" r="3" fill="#ffffff" opacity="0.85"/>
+</svg>
